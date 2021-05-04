@@ -11,6 +11,7 @@ body {
 .page-container {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .nav {
@@ -49,7 +50,7 @@ body {
 .main {
     text-align: center;
     margin-top: 50px;
-    flex: 100%;
+    flex: 1;
 }
 
 .main_logo img{
@@ -63,17 +64,84 @@ margin-top: 50px;
 }
 
 .input_form {
-    max-width: 600px;
-    margin: auto;
+display: flex;
+justify-content: center;
+margin: 0 auto;
 }
 
 .form_group{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 50px;
-    width: 100%;
-    border;
-    border-style: solid;
-    border-color: rgba(240, 255, 255, 0.068); 
+    height: 20px;
+    width: 50%;
+    border: 0.1px solid;
+    border-color:rgb(209, 204, 204); 
     border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.searchbar{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+}
+
+.searchinput { 
+    height: 100%;
+    flex: 1;
+
+}
+
+.searchinput input{
+
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.main-button {
+    margin-top: 35px;
+}
+
+.main-button button {
+    background-color:rgb(241, 239, 236);
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    border: 0.1px solid rgb(247, 245, 245);
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color:rgb(110, 109, 109);
+    padding: 0 10px;
+
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color:rgb(235, 230, 230);
+    border-top: 0.1px solid rgb(230, 228, 228);
+}
+
+.foot_list {
+    display: flex;
+    list-style: none;
+}
+
+.foot_item{
+    padding-left: 25px;
+
+}
+
+.foot_link {
+    font: 16px;
+    font-family: sans-serif;
+    color:rgb(110, 109, 109);
 }
